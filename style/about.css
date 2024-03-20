@@ -1,0 +1,259 @@
+.about {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #383a4c;
+}
+
+.about__content {
+    text-align: center;
+}
+
+.about__title {
+    margin-bottom: 26px;
+}
+
+.about__subtitle {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 35px;
+}
+
+.about__subtitle:before,
+.about__subtitle:after {
+    content: "";
+    background-color: #383a4c;
+    display: inline-block;
+    vertical-align: middle;
+    width: 43px;
+    height: 2px;
+    position: relative;
+}
+
+.about__subtitle:before {
+    left: -23px;
+}
+
+.about__subtitle:after {
+    right: -23px;
+}
+
+.about__description {
+    max-width: 724px;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 50px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 196px;
+    height: 195px;
+}
+
+.list__icon {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../image/ellipse.svg);
+}
+
+.list__icon:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 57px;
+    line-height: 1;
+    color: var(--white);
+}
+
+.list__text {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.list__icon_1:before {
+    content: "1";
+}
+
+.list__icon_2:before {
+    content: "2";
+}
+
+.list__icon_3:before {
+    content: "3";
+}
+
+.list__icon_4:before {
+    content: "4";
+}
+
+.about__slider {
+    position: relative;
+}
+
+.about__slider-btn {
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-image: url("../image/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.about__slider-btn_next {
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    background-color: var(--white);
+}
+
+.about__slider-btn_prev {
+    position: absolute;
+    top: 40%;
+    left: 235px;
+    transform: rotate(180deg);
+    background-color: #4b4d62;
+    color: var(--white);
+}
+
+.about__arrow {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .container-small_about {
+        max-width: 1062px;
+        padding: 0 20px;
+    }
+
+    .about__title {
+        margin-bottom: 23px;
+    }
+
+    .about__subtitle {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 33px;
+    }
+
+    .about__subtitle:before,
+    .about__subtitle:after {
+        width: 40px;
+    }
+
+    .about__description {
+        max-width: 666px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .list__item {
+        gap: 26px;
+        width: 180px;
+        height: 182px;
+    }
+
+    .list__icon {
+        width: 104px;
+        height: 104px;
+        background-image: url(../image/ellipse-small.svg);
+    }
+
+    .list__icon:before {
+        font-size: 52px;
+        line-height: 61px;
+    }
+
+    .list__text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+}
+
+@media (max-width: 720px) {
+    .list {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+
+    .container-small_about {
+        max-width: 320px;
+        padding: 0 15px;
+    }
+
+    .about__title {
+        margin-bottom: 15px;
+    }
+
+    .about__subtitle {
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 26px;
+    }
+
+    .about__subtitle:before,
+    .about__subtitle:after {
+        width: 19.71px;
+    }
+
+    .about__description {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 40px;
+    }
+
+    .list {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .list__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 26px;
+        width: 166px;
+        height: 182px;
+    }
+
+    .list__icon {
+        width: 104px;
+        height: 104px;
+        background-image: url(../image/ellipse-mobile.svg);
+    }
+
+    .list__text {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .about__arrow {
+        display: block;
+    }
+}
