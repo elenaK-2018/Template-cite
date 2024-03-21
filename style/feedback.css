@@ -1,19 +1,15 @@
 .feedback {
     padding-top: 70px;
-    padding-bottom: 70px;
-    min-height: 621px;
+    padding-bottom: 228px;
     background: linear-gradient(
             0deg,
             rgba(47, 50, 75, 0.85),
             rgba(47, 50, 75, 0.85)
         ),
         url(../image/bg-2.jpg);
-    background-position: center;
+    background-position: bottom 13% right 0;
     background-repeat: no-repeat;
-    background-size: 1600px auto;
-}
-
-.feedback__content {
+    background-size: cover;
     text-align: center;
 }
 
@@ -53,10 +49,8 @@
 }
 
 .form__btn {
-    display: block;
     margin: 0 auto;
-    width: 218px;
-    height: 48px;
+    padding: 11px 38px;
     background-color: var(--blue);
     border-radius: 30px;
     box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.3);
@@ -79,9 +73,8 @@
 
 @media (max-width: 1024px) {
     .feedback {
-        padding-bottom: 44px;
-        min-height: 558px;
-        background-size: 1024px auto;
+        padding-bottom: 202px;
+        background-position: bottom 85px left 36%;
     }
 
     .feedback__title {
@@ -120,17 +113,11 @@
     }
 }
 
-@media (max-width: 500px) {
-    .form__fieldset {
-        width: 300px;
-    }
-}
-
-@media (max-width: 355px) {
+@media (max-width: 480px) {
     .feedback {
         padding-top: 30px;
-        padding-bottom: 30px;
-        min-height: 398px;
+        padding-bottom: 157px;
+        background-position: bottom 85px left 54%;
     }
 
     .feedback__title {
@@ -145,6 +132,7 @@
 
     .form__fieldset {
         width: 290px;
+        margin-bottom: 45px;
     }
 
     .form__input {
@@ -160,9 +148,7 @@
     }
 
     .form__btn {
-        width: 174px;
-        height: 38px;
-        margin-bottom: 30px;
+        padding: 11px 27px;
         font-size: 16px;
         line-height: 19px;
     }

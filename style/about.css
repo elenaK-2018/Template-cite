@@ -49,6 +49,7 @@
 .list {
     display: flex;
     justify-content: space-evenly;
+    counter-reset: my-counter 0;
 }
 
 .list__item {
@@ -70,7 +71,8 @@
 }
 
 .list__icon:before {
-    content: "";
+    content: counter(my-counter);
+    counter-increment: my-counter;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -83,22 +85,6 @@
 .list__text {
     font-size: 20px;
     line-height: 23px;
-}
-
-.list__icon_1:before {
-    content: "1";
-}
-
-.list__icon_2:before {
-    content: "2";
-}
-
-.list__icon_3:before {
-    content: "3";
-}
-
-.list__icon_4:before {
-    content: "4";
 }
 
 .about__slider {
@@ -194,7 +180,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
     .about {
         padding-top: 30px;
         padding-bottom: 60px;
@@ -254,6 +240,7 @@
     }
 
     .about__arrow {
-        display: block;
+        display: flex;
+        gap: 30px;
     }
 }

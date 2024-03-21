@@ -1,8 +1,8 @@
 .footer {
     padding: 45px 0;
     background-color: #2f324b;
-    max-width: 1600px;
     margin: 0 auto;
+    margin-top: -158px;
 }
 
 .footer__wrapper {
@@ -38,7 +38,8 @@
 
 @media (max-width: 1024px) {
     .footer {
-        padding: 37px 0 49px 0;
+        padding: 37px 0 50px 0;
+        margin-top: -146px;
     }
 }
 
@@ -57,9 +58,7 @@
 
     .footer__developer_mobile {
         display: block;
-        max-width: 700px;
-        height: 47px;
-        order: 1;
+        width: 100%;
         font-size: 12px;
         line-height: 14px;
         padding: 15px 0 15px 0;
@@ -70,8 +69,16 @@
 }
 
 @media (max-width: 480px) {
+    .footer {
+        padding: 25px 0 0 0;
+        margin-top: -127px;
+    }
     .contact {
         display: none;
+    }
+
+    .footer__container {
+        padding-bottom: 29px;
     }
 
     .icon-phone {
@@ -85,7 +92,6 @@
     }
 
     .footer__wrapper {
-        max-width: 480px;
         flex-wrap: wrap;
     }
 }
