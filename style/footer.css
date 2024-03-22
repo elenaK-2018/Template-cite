@@ -1,8 +1,10 @@
 .footer {
-    padding: 45px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 44px 0;
     background-color: #2f324b;
-    margin: 0 auto;
-    margin-top: -158px;
+    z-index: 5;
 }
 
 .footer__wrapper {
@@ -24,8 +26,9 @@
 }
 
 .footer__developer {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 14px;
+    margin-right: 8px;
 }
 
 .icon-phone {
@@ -39,7 +42,14 @@
 @media (max-width: 1024px) {
     .footer {
         padding: 37px 0 50px 0;
-        margin-top: -146px;
+    }
+
+    .footer__copyright {
+        line-height: 16px;
+    }
+
+    .footer__developer {
+        margin-right: 22px;
     }
 }
 
@@ -60,8 +70,8 @@
         display: block;
         width: 100%;
         font-size: 12px;
-        line-height: 14px;
-        padding: 15px 0 15px 0;
+        line-height: 5px;
+        padding: 15px 0 24px 0;
         background-color: #2a2c3f;
         opacity: 50%;
         text-align: center;
@@ -71,14 +81,13 @@
 @media (max-width: 480px) {
     .footer {
         padding: 25px 0 0 0;
-        margin-top: -127px;
     }
     .contact {
         display: none;
     }
 
     .footer__container {
-        padding-bottom: 29px;
+        padding-bottom: 31px;
     }
 
     .icon-phone {
@@ -88,7 +97,7 @@
     .footer__copyright {
         width: 87.3px;
         font-size: 8px;
-        line-height: 9px;
+        line-height: 11px;
     }
 
     .footer__wrapper {

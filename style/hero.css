@@ -1,12 +1,13 @@
 .hero {
+    position: relative;
     padding-top: 228px;
-    padding-bottom: 120px;
+    padding-bottom: 119px;
     background: linear-gradient(
             0deg,
             rgba(47, 50, 75, 0.85),
             rgba(47, 50, 75, 0.85)
         ),
-        url(../image/bg-1.jpg);
+        url("../image/bg-1.jpg");
     background-position: bottom 49% right 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,9 +24,13 @@
 .hero__description {
     font-size: 22px;
     font-weight: 400;
-    line-height: 26px;
-    margin-bottom: 90px;
+    line-height: 29px;
+    margin-bottom: 92px;
     color: rgba(255, 255, 255, 0.75);
+}
+
+.hero__description_mobile {
+    display: none;
 }
 
 .hero__btn {
@@ -34,7 +39,7 @@
     font-size: 20px;
     line-height: 23px;
     border-radius: 30px;
-    padding: 12px 48px;
+    padding: 13px 48px;
     box-shadow: 0px 4px 25px 0px rgba(21, 169, 203, 0.3);
     background-color: var(--blue);
 }
@@ -42,7 +47,7 @@
 @media (max-width: 1024px) {
     .hero {
         padding-top: 156px;
-        padding-bottom: 70px;
+        padding-bottom: 71px;
     }
 
     .hero__title {
@@ -53,36 +58,46 @@
 
     .hero__description {
         font-size: 18px;
-        line-height: 21px;
-        margin-bottom: 60.43px;
+        line-height: 25px;
+        margin-bottom: 58px;
+    }
+
+    .hero__description_mobile {
+        display: none;
     }
 
     .hero__btn {
-        padding: 11px 49px;
+        padding: 13px 50px;
+        line-height: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .hero {
         padding-top: 110px;
-        padding-bottom: 65px;
+        padding-bottom: 66px;
         background-position: bottom 49% left 13%;
     }
 
     .hero__title {
         font-size: 20px;
         line-height: 23px;
-        margin-bottom: 23px;
+        margin-bottom: 28px;
     }
 
     .hero__description {
+        display: none;
+    }
+
+    .hero__description_mobile {
+        display: block;
         font-size: 14px;
-        line-height: 16px;
-        margin-bottom: 54px;
+        line-height: 19px;
+        margin-bottom: 55px;
     }
 
     .hero__btn {
-        padding: 9px 28.3px;
+        padding: 9px 38.3px;
         font-size: 16px;
         line-height: 19px;
     }

@@ -42,13 +42,13 @@
     margin: 0 auto;
     font-size: 18px;
     font-weight: 400;
-    line-height: 21px;
-    margin-bottom: 50px;
+    line-height: 25px;
+    margin-bottom: 58px;
 }
 
 .list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     counter-reset: my-counter 0;
 }
 
@@ -67,16 +67,16 @@
     height: 122px;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../image/ellipse.svg);
+    background-image: url("../image/ellipse.svg");
 }
 
 .list__icon:before {
     content: counter(my-counter);
     counter-increment: my-counter;
     position: absolute;
-    top: 50%;
+    top: 54%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-51%, -50%);
     font-size: 57px;
     line-height: 1;
     color: var(--white);
@@ -84,14 +84,16 @@
 
 .list__text {
     font-size: 20px;
-    line-height: 23px;
+    line-height: 29px;
 }
 
-.about__slider {
+/* стрелки для слайдера */
+
+/* .about__slider {
     position: relative;
-}
+} */
 
-.about__slider-btn {
+/* .about__slider-btn {
     display: block;
     width: 38px;
     height: 38px;
@@ -117,7 +119,7 @@
     transform: rotate(180deg);
     background-color: #4b4d62;
     color: var(--white);
-}
+} */
 
 .about__arrow {
     display: none;
@@ -125,7 +127,7 @@
 
 @media (max-width: 1024px) {
     .container-small_about {
-        max-width: 1062px;
+        max-width: 961px;
         padding: 0 20px;
     }
 
@@ -147,7 +149,8 @@
     .about__description {
         max-width: 666px;
         font-size: 16px;
-        line-height: 19px;
+        line-height: 22px;
+        margin-bottom: 60px;
     }
 
     .list__item {
@@ -159,17 +162,19 @@
     .list__icon {
         width: 104px;
         height: 104px;
-        background-image: url(../image/ellipse-small.svg);
+        background-image: url("../image/ellipse-small.svg");
     }
 
     .list__icon:before {
         font-size: 52px;
         line-height: 61px;
+        top: 50%;
+        left: 49%;
     }
 
     .list__text {
         font-size: 18px;
-        line-height: 21px;
+        line-height: 24px;
     }
 }
 
@@ -182,33 +187,33 @@
 
 @media (max-width: 480px) {
     .about {
-        padding-top: 30px;
+        padding-top: 31px;
         padding-bottom: 60px;
     }
 
     .container-small_about {
-        max-width: 320px;
+        max-width: 303px;
         padding: 0 15px;
     }
 
     .about__title {
-        margin-bottom: 15px;
+        margin-bottom: 17px;
     }
 
     .about__subtitle {
         font-size: 16px;
         line-height: 19px;
-        margin-bottom: 26px;
+        margin-bottom: 30px;
     }
 
     .about__subtitle:before,
     .about__subtitle:after {
-        width: 19.71px;
+        width: 23px;
     }
 
     .about__description {
         font-size: 12px;
-        line-height: 14px;
+        line-height: 17px;
         margin-bottom: 40px;
     }
 
@@ -223,7 +228,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 26px;
+        gap: 27px;
         width: 166px;
         height: 182px;
     }
@@ -231,16 +236,16 @@
     .list__icon {
         width: 104px;
         height: 104px;
-        background-image: url(../image/ellipse-mobile.svg);
+        background-image: url("../image/ellipse-mobile.svg");
     }
 
     .list__text {
         font-size: 18px;
-        line-height: 21px;
+        line-height: 23px;
     }
 
-    .about__arrow {
+    /* .about__arrow {
         display: flex;
         gap: 30px;
-    }
+    } */
 }
